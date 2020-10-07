@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function Title() {
+export default function Title(props) {
+  const { titles, date, author } = props;
+
   return (
     <div>
-      <h1>title section</h1>
+      <article>
+        <h1>h1</h1>
+        <p>{author.copyright}</p>
+        <p>{date.date}</p>
+      </article>
     </div>
   );
 }
