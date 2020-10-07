@@ -6,7 +6,7 @@ import axios from "axios";
 import "./App.css";
 
 function App() {
-  const [nasaData, setNasaData] = useState([]);
+  const [nasaData, setNasaData] = useState({});
 
   useEffect(() => {
     const fetchData = () => {
@@ -15,8 +15,8 @@ function App() {
         .then((res) => {
           // setNasaData(res.data);
           setNasaData(res.data);
-          console.log(nasaData);
-          console.log(res.data);
+          // console.log(nasaData);
+          // console.log(res.data);
         })
         .catch((err) => {
           console.log(err);
@@ -33,8 +33,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* </Title titles={nasaData} date={nasaData} author={nasaData} />*/}
-      <Content />
+      <Title title={nasaData} date={nasaData} author={nasaData} />
+      <Content explanation={nasaData} img={nasaData} />
     </div>
   );
 }

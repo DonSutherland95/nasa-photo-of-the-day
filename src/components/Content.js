@@ -1,9 +1,13 @@
 import React from "react";
 
-export default function Content() {
+export default function Content(props) {
+  const { explanation, img } = props;
   return (
     <div>
-      <h1>content section</h1>
+      <article className="content-article">
+        <p className="content-paragraph">{explanation.explanation}</p>
+        <img src={img.url} className="content-img" alt="" />
+      </article>
     </div>
   );
 }

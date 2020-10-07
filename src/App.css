@@ -82,8 +82,8 @@ video { */
 
 /* .App {
   text-align: center;
-}
-
+} */
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -94,8 +94,8 @@ video { */
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
+*/
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -104,20 +104,20 @@ video { */
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
-}
+} */
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-} */
+}  */
 
 /* css reset */
 * {
@@ -127,6 +127,12 @@ video { */
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: "Roboto", sans-serif;
+  /* line-height: 150%; */
+}
+.App {
+  text-align: center;
+  margin: 0 30%;
 }
 /* header css */
 .header {
@@ -135,4 +141,25 @@ video { */
 .header-title {
   font-size: 200%;
   color: white;
+}
+.title-heading {
+  font-size: 350%;
+  margin-bottom: 2%;
+}
+.title-author {
+  font-style: italic;
+  margin-bottom: 2%;
+}
+.title-date {
+  font-style: italic;
+  margin-bottom: 2%;
+}
+
+.content-paragraph {
+  margin-bottom: 2%;
+}
+.content-img {
+  display: inline-block;
+  width: 45%;
+  /* margin-top: 25%; */
 }

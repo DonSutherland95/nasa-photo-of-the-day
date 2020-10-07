@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Title(props) {
-  const { titles, date, author } = props;
+  const { title, date, author } = props;
 
   return (
     <div>
       <article>
-        <h1>h1</h1>
-        <p>{author.copyright}</p>
-        <p>{date.date}</p>
+        <h1 className="title-heading">{title.title}title</h1>
+        <p className="title-author">{author.copyright}author</p>
+        <p className="title-date">{date.date}date</p>
       </article>
     </div>
   );
