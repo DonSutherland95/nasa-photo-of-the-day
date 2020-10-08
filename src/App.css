@@ -128,13 +128,14 @@ video { */
   font: inherit;
   vertical-align: baseline;
   font-family: "Roboto", sans-serif;
-  /* line-height: 150%; */
 }
 .App {
   text-align: center;
   margin: 0 30%;
+  border: 2px black solid;
+  background-color: grey;
 }
-/* header css */
+/*
 .header {
   background-color: black;
 }
@@ -154,12 +155,11 @@ video { */
   font-style: italic;
   margin-bottom: 2%;
 }
-
-.content-paragraph {
+*/
+/* .content-paragraph {
   margin-bottom: 2%;
 }
 .content-img {
   display: inline-block;
   width: 45%;
-  /* margin-top: 25%; */
-}
+} */
